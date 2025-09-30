@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    --text-color: #0b0311cb;
+    --card-front-color: #cf7df598;
+    --card-back-color: #d074fa;
+}
+
+body {
+    background-color: rgba(188, 116, 255, 0.774);
+    font-family: bai Jamjurre;
+}
+
+#container {
+    display: flex;
+}
+
+.cartao { 
+    margin: 1rem 1rem;
+    /* background-color: var(--card-front-color); */
+    /* Não precisa mais desse background */
+    height: 10rem;
+    flex-grow: 1;
+    flex-basis: calc(33% - 6rem);
+}
+
+.cartao__conteudo {
+    background-color: var(--card-front-color);
+    /* Esse background vai ser colocado no conteûdo */
+    text-align: center;
+    /*background-color: rgb(181, 121, 238)*/;
+    height: 100%;
+}
+
+.cartao__conteudo h3 {
+    color:var(--text-color);
+    border: 1px solid var(--text-color);
+    text-align: left;
+    padding: 0.5rem;
+    position: absolute;
+    margin: 0.6rem;
+    border-radius: 0.6rem;
+    font-size: 1vw;
+    /* Cuida com o tipo de valor "vw" é pra conforme o tamanho do navegador
+    e "rem" é com base no tamanho das fontes e do conteûdo*/
+}
+
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    /* Pode ser essa cor mas escolhe um tom de mais contraste */
+    font-weight: 700;
+    /* Esqueceu de criar a classe .cartao__conteudo__resposta p */
+}
+
+footer {
+    background-color: rgba(130, 61, 177, 0.781);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    /* Para alinhar esse margin-top de 0.1rem precisa de um font-size maior */
+    /* Por isso eu aumentei ambos para esse rodapé não final minusculo e nem gigantesco */
+}
+
+/* Assista o vídeo com calma prestando mais antenção lulu pra não ficar faltando coisas */
